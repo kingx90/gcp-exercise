@@ -10,11 +10,11 @@
 - A custom VPC network "network-king" was created with two subnets "king-sub1/king-sub2" in seperate regions. Firewall rules were configured to allow HTTP/HTTPS traffic and to also allow ssh access.
 
 ## Compute engine virtual machine instance
-- Two Vm instances were created for subnets "king-sub1/king-sub2" within the VPC network created.
+- Two Vm instances kingsley-vm/king-vm were created for subnets "king-sub1/king-sub2" within the VPC network created.
 
 ## Identity and Access management (IAM)
-- A compute network admin role is granted to abel@nexedgetechnologies.com on the VPC network created.
-- A compute admin role is also granted to abel@nexedgetechnologies.com on the VM instances created.
+- A compute network admin role is granted to abel@nexedgetechnologies.com on the VPC network-king created.
+- A compute admin role is also granted to abel@nexedgetechnologies.com on both VM instances created.
 
 ## Database 
 - A cloud SQL database (king-data) instance was created and within the instance a table with sample data was inputed inside a newly created database (my_data). 
