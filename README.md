@@ -17,7 +17,7 @@
 - A compute admin role is also granted to abel@nexedgetechnologies.com on both VM instances created.
 
 ## Database 
-- A cloud SQL database (king-data) instance was created.Within the instance, a table with sample data was inputed inside a newly created database (my_data). 
+- A cloud SQL database (king-data) instance was created. Within the instance, a table with sample data was inputed inside a newly created database (my_data). 
 
 ## Linux command
 - On the first virtual machine created "kingsley-vm", mastery of basic linux command waclears demonstrated by performing the following tasks: 
