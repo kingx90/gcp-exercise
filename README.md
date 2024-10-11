@@ -1,16 +1,16 @@
 # gcp-exercise 
 
 # Description
-- This documentation contains the steps taken to set up Iac resources on google cloud. 
+- This documentation covers several areas of GCP services and demonstrate the use of infrastructure as code to position repository on GitHub and provision servises on google cloud.  
 
 ## Github 
-- A gcp-exercise repository was created and a README file was added to it and used as the main branch upon creation. 
+- I achieved a succesfull creation of a repository on github. A gcp-exercise repository was created with a README.md file added to it. This will be essential in 
 
-## Virtual private cloud network
-- A custom VPC network "network-king" was created with two subnets "king-sub1/king-sub2" in seperate regions. Firewall rules were configured to allow HTTP/HTTPS traffic and to also allow ssh access.
+## VPC
+- On virtual private cloud service, a custom vpc network "network-king" is created with two subntes(king-sub1 & king-sub2) respectively within the regions. Firewall ruels were configured to allow HTTP/HTTPS traffic and to allow ssh access from 0.0.0.0
 
 ## Compute engine virtual machine instance
-- Two Vm instances kingsley-vm/king-vm were created for subnets "king-sub1/king-sub2" within the VPC network created.
+- A total of two virtual machines is created "kingsley-vm" "king-vm". 
 
 ## Identity and Access management (IAM)
 - A compute network admin role is granted to abel@nexedgetechnologies.com on the VPC network-king created.
