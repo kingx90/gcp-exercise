@@ -24,4 +24,7 @@
 - Five folders were created with one .txt file inputed in each folder.
 - In the first folder created "folder1", a sample python flask app was deployed. 
 
+## Conclusion
+- This exercise demonstrates the use of terraform for infrastructure as code provisioning in Google cloud platform, Identity and access management configurations and simple basic linux commands.
+
 
