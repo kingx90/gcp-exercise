@@ -31,3 +31,22 @@ resource "google_compute_instance" "kingsley-vm" {
     }
   }
 }  
+
+
+provider "google" {
+  project = "project-kingsley-433618"
+  region  = "asia-east1"
+}
+
+resource "google_compute_network" "vpc_network" {
+  name                    = "network-king"
+  auto_create_subnetworks = false
+}
+
+
+resource "google_compute_subnetwork" "subnet" {
+  name          = "king-sub1"
+  ip_cidr_range = "10.0.1.0/24"
+  region        = "asia-east1"
+  network       = "network-king"
+}
