@@ -19,7 +19,9 @@
 
 ## Database 
 - For database, i succesfully created a (king-data) instance. Within the instance, a table with sample data was inputed inside a newly created database (my_data). 
-- Data as follows: 
+
+- Data as follows: Students id: John doe, Jane Smith
+                       Age    :   22    ,      21
 
 ## Linux command
 - On the first virtual machine instance "kingsley-vm", mastery of basic linux command was demonstrated by performing the following tasks: 
