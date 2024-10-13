@@ -10,7 +10,6 @@ terraform {
 provider "google" {
   project = "project-kingsley-433618"
   region  = "asia-east1"
-  credentials = file("project-kingsley-433618-acc4fd8352e6.json")
 }
 
 resource "google_compute_instance" "kingsley-vm" {
