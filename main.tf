@@ -50,3 +50,10 @@ resource "google_compute_subnetwork" "subnet" {
   region        = "asia-east1"
   network       = "network-king"
 }
+
+ resource "google_compute_subnetwork" "subnet-02" { 
+   name          = "king-sub2"
+   ip_cidr_range = "10.0.34.0/24"
+   region        = "asia-northeast1"
+   network       = "network-king"
+}
