@@ -7,7 +7,7 @@
 - I achieved a succesful creation of a repository on github. A gcp-exercise repository was created with a README.md and main.tf files added to it. This will be essential in covering works from Visual Studio Code (VSC)
 
 ## VPC
-- On virtual private cloud service, a custom vpc network "network-king" is created with two subnets(king-sub1 & king-sub2) respectively within the regions asia-east1 and asia-northeast1. Firewall ruels were configured to allow HTTP/HTTPS traffic and to allow ssh access from 0.0.0.0
+- On virtual private cloud service, a custom vpc network "network-king" is created using TERRAFORM with two subnets(king-sub1 & king-sub2) respectively within the regions asia-east1 and asia-northeast1. Firewall ruels were configured to allow HTTP/HTTPS traffic and to allow ssh access from 0.0.0.0
 
 ## Compute engine virtual machine instance
 - Using terraform, i was able to achieve a successful creation of "kingsley-vm" with "king-sub1" subnet added to it as the network-interfaces. upon creation of kingsley-vm, a boot disk "ubuntu" is used.
