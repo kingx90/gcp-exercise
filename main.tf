@@ -56,3 +56,16 @@ resource "google_compute_subnetwork" "subnet" {
    region        = "asia-northeast1"
    network       = "network-king"
 }
+
+
+provider "google" {
+  project = "project-kingsley-433618"
+  region  = "us-central11"  
+}
+
+resource "google_storage_bucket" "bucket-king" {
+  name     = "my-unique-bucket-1"
+  location = "US" 
+  storage_class = "STANDARD"
+  uniform_bucket_level_access = true
+   }
