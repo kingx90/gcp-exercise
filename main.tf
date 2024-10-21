@@ -69,3 +69,8 @@ resource "google_storage_bucket" "bucket-king" {
   storage_class = "STANDARD"
   uniform_bucket_level_access = true
    }
+
+resource "google_storage_bucket" "bucket-kingsley" {
+  name     = "my-kingsley-bucket"
+  location = "US"
+   }
