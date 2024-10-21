@@ -70,7 +70,10 @@ resource "google_storage_bucket" "bucket-king" {
   uniform_bucket_level_access = true
    }
 
-resource "google_storage_bucket" "bucket-kingsley" {
-  name     = "my-kingsley-bucket"
-  location = "US"
-   }
+resource "google_storage_bucket" "my_bucket-02" {
+  name          = "my_nexedgecloud-bucket"
+  storage_class = "regional"
+  location      = "us-central1"
+
+  uniform_bucket_level_access = true
+}
