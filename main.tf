@@ -77,3 +77,16 @@ resource "google_storage_bucket" "my_bucket-02" {
 
   uniform_bucket_level_access = true
 }
+
+
+
+resource "google_sql_database_instance" "my_mysql_instance" {
+ name                = "king-data-mysql-instance"
+ database_version   = "MYSQL_8_0"
+ deletion_protection = false
+  region              = "us-central1"
+  settings {
+   tier               = "db-n1-standard-1"
+   disk_size       = 10
+ } 
+}
