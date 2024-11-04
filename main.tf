@@ -12,6 +12,7 @@ provider "google" {
   region  = "asia-east1"
 }
 
+
 resource "google_compute_instance" "kingsley-vm" {
   name         = "kingsley-vm"
   machine_type = "e2-micro"          
