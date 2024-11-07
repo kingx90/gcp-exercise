@@ -42,3 +42,4 @@ gcloud compute networks subnets list
 gcloud compute networks subnets list --filter=network:NETWORK_NAME
 gcloud compute networks delete NETWORK_NAME
 gcloud compute networks subnets delete SUBNET_NAME --region=REGION
+
