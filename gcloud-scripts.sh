@@ -1,6 +1,3 @@
-#!/bin/bash 
-
-# checkout gcloud version
 gcloud version
 gcloud auth login
 
