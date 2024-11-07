@@ -12,10 +12,18 @@
 #   region  = "asia-east1"
 # }
 
+<<<<<<< HEAD
 # resource "google_compute_instance" "kingsley-vm" {
 #   name         = "kingsley-vm"
 #   machine_type = "e2-micro"          
 #   zone         = "asia-east1-a"     
+=======
+
+resource "google_compute_instance" "kingsley-vm" {
+  name         = "kingsley-vm"
+  machine_type = "e2-micro"          
+  zone         = "asia-east1-a"     
+>>>>>>> e7fd7175f37ffde4902f0d0ca18546bdbb56cb10
 
 #   boot_disk {
 #     initialize_params {
@@ -43,6 +51,7 @@
 #   auto_create_subnetworks = false
 # }
 
+<<<<<<< HEAD
 
 # resource "google_compute_subnetwork" "subnet" {
 #   name          = "king-sub1"
@@ -70,3 +79,33 @@
 #   storage_class = "STANDARD"
 #   uniform_bucket_level_access = true
 #    }  
+=======
+ resource "google_compute_subnetwork" "subnet-02" { 
+   name          = "king-sub2"
+   ip_cidr_range = "10.0.34.0/24"
+   region        = "asia-northeast1"
+   network       = "network-king"
+}
+
+
+provider "google" {
+  project = "project-kingsley-433618"
+  region  = "us-central11"  
+}
+
+resource "google_storage_bucket" "bucket-king" {
+  name     = "my-unique-bucket-1"
+  location = "US" 
+  storage_class = "STANDARD"
+  uniform_bucket_level_access = true
+   }
+
+resource "google_storage_bucket" "my_bucket-02" {
+  name          = "my_nexedgecloud-bucket"
+  storage_class = "regional"
+  location      = "us-central1"
+
+  uniform_bucket_level_access = true
+}
+
+>>>>>>> e7fd7175f37ffde4902f0d0ca18546bdbb56cb10
