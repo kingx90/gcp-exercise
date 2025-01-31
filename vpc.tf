@@ -16,10 +16,3 @@ resource "google_compute_subnetwork" "subnet-2" {
   region        = "europe-west10"
   network       = "my-vpc"
 }
-
-resource "google_compute_subnetwork" "subnet-3" {
-  name          = "my-subnet-3"
-  ip_cidr_range = "10.0.3.0/24"
-  region        = "asia-east1"
-  network       = "my-vpc"
-}

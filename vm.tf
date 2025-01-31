@@ -41,22 +41,3 @@ resource "google_compute_instance" "king-vm2" {
 }
 
 
-resource "google_compute_instance" "king-vm3" {
-  name         = "king-vm3"
-  machine_type = "e2-micro"          
-  zone         = "asia-east1-a"
-
-boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-11"
-
-    }
-  }
-
-  network_interface {
-    subnetwork = "my-subnet-3"
-
-    access_config {  
-    }
-  }
-}
