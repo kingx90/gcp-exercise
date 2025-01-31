@@ -17,15 +17,15 @@
 - The same was also done with VM instances (kingsley-vm & king-vm) but a compute admin was granted instead to (abel@nexedgetechnologies.com). 
 
 ## Database 
-- For database, i succesfully created a (king-data) instance. Within the instance, a table with sample data was inputed inside a newly created database (my_data). 
+- A succesfully created MYSQL database instance named mysql-db-1 is set up under the region of us-central1. Within the instance, a table with sample data was inputed inside a newly created database (my_data). 
 
 - Data within the instance as follows: Students id: John doe, Jane Smith
                                            Age    :   22    ,      21
 
 ## Linux command
-- On the first virtual machine instance "king-vm", mastery of basic linux command was demonstrated by performing the following tasks: 
+- On the first VM instance "king-vm", mastery of basic linux command was demonstrated by performing the following tasks: 
 - Five folders (alpha, bravo, charlie, delta, echo) were created with one .txt file inputed in each of the folders listed.
-- In the first folder created "Alpha", a sample python flask app was deployed showing proeficiancy to use linux for app/software deployment using basic linux commands.
+- In the first directory created "Alpha", a sample python flask app was deployed, showing proeficiancy to use linux for app/software deployment using basic linux commands.
 
 ## Conclusion
 - This exercise demonstrates the use of terraform for infrastructure as code provisioning in Google cloud platform, Identity and access management configurations and simple basic linux commands. Thank you 
